@@ -39,4 +39,11 @@ int get_max(int *array, size_t size);
 void count_sort(int *array, size_t size, int exp);
 void heap_sort(int *array, size_t size);
 void heapify(int *array, size_t size, size_t i, size_t size2);
+void bitonic_sort(int *array, size_t size);
+void bitonic_sort_rec(int *array, size_t size, int dir, size_t size_total);
+void bitonic_merge(int *array, size_t size, int dir, size_t size_total);
+void swap(int *a, int *b);
+void quick_sort_hoare(int *array, size_t size);
+void quick_sort_hoare_recursion(int *array, int low, int high, size_t size);
+int partition_hoare(int *array, int low, int high, size_t size);
 #endif /* __SORT_H__ */
